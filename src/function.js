@@ -1,12 +1,12 @@
 exports.hitung = (pukulMulai, pukulSelesai, kecepatanAwal) => {
-    kecepatan = kecepatanAwal
-    tempMulai = ''                  // penyimpanan sementara untuk jam sebelum dimasukkan di array 
-    tempSelesai = ''
-    arrMulai = []                   // menyimpan jam dalam bentuk array dengan format ('HH', 'MM', 'SS')
-    arrSelesai = []
-    a = 0                           // index array
-    jarak = 0                       // variabel kosong
-    waktu = 0
+    let kecepatan = kecepatanAwal
+    let tempMulai = ''                  // penyimpanan sementara untuk jam sebelum dimasukkan di array 
+    let tempSelesai = ''
+    let arrMulai = []                   // menyimpan jam dalam bentuk array dengan format ('HH', 'MM', 'SS')
+    let arrSelesai = []
+    let a = 0                           // index array
+    let jarak = 0                       // variabel kosong
+    let waktu = 0
 
     // Mengubah jam menjadi array
     for(let i=0; i<pukulMulai.length; i++){
