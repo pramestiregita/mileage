@@ -12,7 +12,7 @@ exports.hitung = (pukulMulai, pukulSelesai, kecepatanAwal) => {
     for(let i=0; i<pukulMulai.length; i++){
         tempMulai += pukulMulai[i]
         tempSelesai += pukulSelesai[i]
-        if(pukulMulai[i]===':' || i===pukulMulai.length-1){
+        if(pukulMulai[i]===':' || i===pukulMulai.length-1 && pukulSelesai[i]===':' || i===pukulSelesai.length-1){
             arrMulai[a] = parseInt(tempMulai)
             arrSelesai[a] = parseInt(tempSelesai)
             tempMulai = ''
@@ -25,7 +25,6 @@ exports.hitung = (pukulMulai, pukulSelesai, kecepatanAwal) => {
     
     // Mengubah array jam menjadi satuan detik
     let waktuMulai = (arrMulai[0]*3600) + (arrMulai[1]*60) + (arrMulai[2])
-    
     let waktuSelesai = (arrSelesai[0]*3600) + (arrSelesai[1]*60) + (arrSelesai[2])
     // console.log(waktuMulai)
     // console.log(waktuSelesai)
